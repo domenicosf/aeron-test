@@ -1,0 +1,6 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.agrona.nio.TransportPoller (file:/E:/workspace/aeron-test/build/libs/aeron-test-1.0-SNAPSHOT.jar) to field sun.nio.ch.SelectorImpl.selectedKeys
+WARNING: Please consider reporting this to the maintainers of org.agrona.nio.TransportPoller
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Shutdown Driver...

@@ -1,0 +1,47 @@
+Building aeron_test
+Step 1/7 : FROM gradle:jdk11
+ ---> d94ba6caf973
+Step 2/7 : WORKDIR /opt/aeron
+ ---> Using cache
+ ---> 0f8b1898d61a
+Step 3/7 : COPY ./ /opt/aeron
+ ---> a1b96116c8ab
+Step 4/7 : RUN gradle build
+ ---> Running in 27a858d3561a
+
+Welcome to Gradle 6.6!
+
+Here are the highlights of this release:
+ - Experimental build configuration caching
+ - Built-in conventions for handling credentials
+ - Java compilation supports --release flag
+
+For more details see https://docs.gradle.org/6.6/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileJava
+> Task :compileGroovy NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :compileTestGroovy NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 36s
+2 actionable tasks: 2 executed
+Removing intermediate container 27a858d3561a
+ ---> fce58f7ea643
+Step 5/7 : RUN mkdir logs
+ ---> Running in 2bd71f4f53b5
+[91mmkdir: cannot create directory ‘logs’[0m[91m: File exists
+[0mService 'aeron_test' failed to build: The command '/bin/sh -c mkdir logs' returned a non-zero code: 1

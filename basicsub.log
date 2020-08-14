@@ -1,0 +1,38 @@
+Subscribing to aeron:udp?endpoint=localhost:20121 on stream id 1001
+Available image on aeron:udp?endpoint=localhost:20121 streamId=1001 sessionId=-448304160 from 127.0.0.1:59674
+Message to stream 1001 from session -448304160 (14@32) <<Hello World! 1>>
+Message to stream 1001 from session -448304160 (14@96) <<Hello World! 2>>
+Message to stream 1001 from session -448304160 (14@160) <<Hello World! 3>>
+Message to stream 1001 from session -448304160 (14@224) <<Hello World! 4>>
+Message to stream 1001 from session -448304160 (14@288) <<Hello World! 5>>
+Message to stream 1001 from session -448304160 (14@352) <<Hello World! 6>>
+Message to stream 1001 from session -448304160 (14@416) <<Hello World! 7>>
+Message to stream 1001 from session -448304160 (14@480) <<Hello World! 8>>
+Message to stream 1001 from session -448304160 (14@544) <<Hello World! 9>>
+Message to stream 1001 from session -448304160 (15@608) <<Hello World! 10>>
+Message to stream 1001 from session -448304160 (15@672) <<Hello World! 11>>
+Message to stream 1001 from session -448304160 (15@736) <<Hello World! 12>>
+Message to stream 1001 from session -448304160 (15@800) <<Hello World! 13>>
+Message to stream 1001 from session -448304160 (15@864) <<Hello World! 14>>
+Message to stream 1001 from session -448304160 (15@928) <<Hello World! 15>>
+Message to stream 1001 from session -448304160 (15@992) <<Hello World! 16>>
+Message to stream 1001 from session -448304160 (15@1056) <<Hello World! 17>>
+Message to stream 1001 from session -448304160 (15@1120) <<Hello World! 18>>
+Message to stream 1001 from session -448304160 (15@1184) <<Hello World! 19>>
+Message to stream 1001 from session -448304160 (15@1248) <<Hello World! 20>>
+Message to stream 1001 from session -448304160 (15@1312) <<Hello World! 21>>
+Message to stream 1001 from session -448304160 (15@1376) <<Hello World! 22>>
+Unavailable image on aeron:udp?endpoint=localhost:20121 streamId=1001 sessionId=-448304160
+1597431236288 Exception:
+io.aeron.exceptions.DriverTimeoutException: MediaDriver keepalive age exceeded (ms): timeout= 10000, age=10312
+	at io.aeron.ClientConductor.checkLiveness(ClientConductor.java:1107)
+	at io.aeron.ClientConductor.checkTimeouts(ClientConductor.java:1075)
+	at io.aeron.ClientConductor.service(ClientConductor.java:990)
+	at io.aeron.ClientConductor.doWork(ClientConductor.java:191)
+	at org.agrona.concurrent.AgentRunner.doDutyCycle(AgentRunner.java:291)
+	at org.agrona.concurrent.AgentRunner.run(AgentRunner.java:164)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+***
+*** timeout for the Media Driver - is it currently running? exiting
+***

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  aeron_test:
+    build: .
+    image: domenicosf/aeron-test
+    volumes:
+      - "C:\\logs:/opt/aeron/"
+    shm_size: 512M
